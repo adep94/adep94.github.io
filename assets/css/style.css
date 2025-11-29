@@ -1,49 +1,168 @@
-/* General Styles */
-
-body {
-    font-family: Arial, sans-serif;
+/* =========================================
+   RESET & BASE STYLES
+========================================= */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
 }
 
-header {
-    background: #35424a;
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0A0A0C;
     color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-nav {
-    margin: 20px 0;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.main-content {
-    padding: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #35424a;
-    color: #ffffff;
-    position: relative;
-    bottom: 0;
+/* =========================================
+   GLOBAL SECTIONS
+========================================= */
+.section {
     width: 100%;
+    max-width: 1000px;
+    margin: 120px auto;
+    padding: 0 2rem;
+}
+
+.section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #00e5ff;
+    text-shadow: 0 0 10px #00e5ff88;
+}
+
+/* =========================================
+   HERO
+========================================= */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* Futuristic gradient */
+    background: radial-gradient(circle at 20% 20%, #0059ff33, transparent 60%),
+                radial-gradient(circle at 80% 80%, #00e5ff33, transparent 60%),
+                #0A0A0C;
+}
+
+.hero-content .title {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: white;
+}
+
+.hero-content .subtitle {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    color: #00e5ff;
+}
+
+.hero-text {
+    margin-top: 18px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 10px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn.primary {
+    background: #0059ff;
+    color: white;
+    box-shadow: 0 0 12px #0059ff88;
+}
+
+.btn.primary:hover {
+    background: #1a6aff;
+    transform: translateY(-3px);
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 2px solid #00e5ff;
+    color: #00e5ff;
+}
+
+.btn.secondary:hover {
+    background: #00e5ff22;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: #111116;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #1c1c22;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: #0059ff;
+    box-shadow: 0 0 18px #0059ff44;
+}
+
+.project-card h3 {
+    color: #00e5ff;
+    margin-bottom: 10px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    background: #0059ff55;
+    border-radius: 6px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+/* =========================================
+   CONTACT
+========================================= */
+#contact a {
+    color: #00e5ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    text-shadow: 0 0 10px #00e5ffaa;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 780px) {
+    .hero-content .title {
+        font-size: 2.8rem;
+    }
+
+    .hero-content .subtitle {
+        font-size: 1.4rem;
+    }
 }
