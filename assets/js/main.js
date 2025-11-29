@@ -54,6 +54,28 @@ particlesJS("particles-js", {
 });
 
 
+/* =============================
+   PROJECT MODALS
+============================= */
+const modal = document.getElementById("project-modal");
+const modalTitle = document.getElementById("modal-title");
+const modalDescription = document.getElementById("modal-description");
+const modalExtra = document.getElementById("modal-extra");
+const modalClose = document.querySelector(".modal-close");
+
+function openProjectModal(title, description, extraHTML) {
+    modalTitle.textContent = title;
+    modalDescription.textContent = description;
+    modalExtra.innerHTML = extraHTML;
+    modal.style.display = "flex";
+}
+
+modalClose.addEventListener("click", () => modal.style.display = "none");
+
+window.addEventListener("click", e => {
+    if (e.target === modal) modal.style.display = "none";
+});
+
 /* Scroll reveal */
 const reveals = document.querySelectorAll(".reveal");
 
