@@ -53,6 +53,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 
     /* Futuristic gradient */
     background: radial-gradient(circle at 20% 20%, #0059ff33, transparent 60%),
@@ -77,6 +79,26 @@ body {
     margin-top: 18px;
     font-size: 1.1rem;
     opacity: 0.8;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -30%;
+    left: -30%;
+    background: 
+        linear-gradient(60deg, rgba(0,229,255,0.06) 0%, transparent 60%),
+        linear-gradient(120deg, rgba(0,89,255,0.06) 0%, transparent 60%);
+    mask-image: radial-gradient(circle, black 20%, transparent 80%);
+    animation: gridMove 20s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes gridMove {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
 }
 
 /* Buttons */
@@ -127,15 +149,30 @@ body {
     padding: 25px;
     border-radius: 14px;
     border: 1px solid #1c1c22;
-    transition: 0.3s ease;
-    position: relative;
+    backdrop-filter: blur(4px);
+    transition: 0.4s ease;
 }
 
 .project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 0 20px #00e5ff33;
+    border-color: #00e5ff;
+}
+
+/* .project-card {
+    background: #111116;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #1c1c22;
+    transition: 0.3s ease;
+    position: relative;
+} */
+
+/* .project-card:hover {
     transform: translateY(-6px);
     border-color: #0059ff;
     box-shadow: 0 0 18px #0059ff44;
-}
+} */
 
 .project-card h3 {
     color: #00e5ff;
@@ -150,6 +187,56 @@ body {
     border-radius: 6px;
     margin-right: 6px;
     margin-top: 10px;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 10, 12, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(0, 229, 255, 0.1);
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-logo {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #00e5ff;
+    text-shadow: 0 0 12px #00e5ff88;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00e5ff;
+    text-shadow: 0 0 10px #00e5ff88;
 }
 
 /* =========================================
