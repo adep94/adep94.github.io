@@ -1,3 +1,82 @@
+/* =============================================
+   LANGUAGE SYSTEM IT / EN
+============================================= */
+
+const translations = {
+
+    "it": {
+        "about_link": "Chi sono",
+        "projects_link": "Progetti",
+        "contact_link": "Contatti",
+
+        "hero_title": "Andrea De Pisapia",
+        "hero_subtitle": "Ingegnere Embedded & Control Systems",
+        "hero_text": "FPGA Design · Real-Time Systems · Robotics · Simulation & Control",
+        "btn_projects": "I miei progetti",
+        "btn_cv": "Scarica CV",
+
+        "about_title": "Chi sono",
+        "about_text": "Sono un ingegnere di sistemi embedded con esperienza in FPGA, controllo, modellazione e sistemi real-time.",
+        
+        "timeline_title": "Timeline",
+        "skills_title": "Competenze",
+        "contact_title": "Contattami",
+
+        "form_name": "Nome",
+        "form_email": "Email",
+        "form_message": "Messaggio",
+        "form_send": "Invia"
+    },
+
+    "en": {
+        "about_link": "About",
+        "projects_link": "Projects",
+        "contact_link": "Contact",
+
+        "hero_title": "Andrea De Pisapia",
+        "hero_subtitle": "Embedded & Control Systems Engineer",
+        "hero_text": "FPGA Design · Real-Time Systems · Robotics · Simulation & Control",
+        "btn_projects": "My Projects",
+        "btn_cv": "Download CV",
+
+        "about_title": "About Me",
+        "about_text": "I am an embedded systems engineer experienced in FPGA design, control systems, modelling and real-time architectures.",
+        
+        "timeline_title": "Timeline",
+        "skills_title": "Skills",
+        "contact_title": "Contact Me",
+
+        "form_name": "Name",
+        "form_email": "Email",
+        "form_message": "Message",
+        "form_send": "Send"
+    }
+};
+
+function setLanguage(lang) {
+
+    // Salva la lingua
+    localStorage.setItem("lang", lang);
+
+    // Aggiorna testo dinamico
+    document.querySelectorAll("[data-lang-key]").forEach(el => {
+        const key = el.getAttribute("data-lang-key");
+        el.innerHTML = translations[lang][key];
+    });
+
+    // Aggiorna stile attivo
+    document.getElementById("lang-it").classList.remove("lang-active");
+    document.getElementById("lang-en").classList.remove("lang-active");
+
+    document.getElementById("lang-" + lang).classList.add("lang-active");
+}
+
+// Carica lingua salvata (default = IT)
+document.addEventListener("DOMContentLoaded", () => {
+    const lang = localStorage.getItem("lang") || "it";
+    setLanguage(lang);
+});
+
 /* ===============================================
    PARTICLES BACKGROUND
 ================================================ */

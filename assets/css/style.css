@@ -523,3 +523,23 @@ body {
 .contact-form textarea {
     min-height: 140px;
 }
+
+.lang-switch {
+    color: #00e5ff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lang-switch span {
+    margin: 0 4px;
+    transition: 0.3s;
+}
+
+.lang-switch span:hover {
+    text-shadow: 0 0 10px #00e5ff;
+}
+
+.lang-active {
+    font-weight: 700;
+    text-shadow: 0 0 10px #00e5ffaa;
+}
