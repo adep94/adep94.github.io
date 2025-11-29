@@ -44,94 +44,113 @@ body {
     text-shadow: 0 0 10px #00e5ff88;
 }
 
-/* =========================================
-   HERO
-========================================= */
+/* ===========================
+   HERO SECTION — MINIMAL TECH
+=========================== */
+
 .hero {
-    height: 100vh;
+    height: 92vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
-    overflow: hidden;
 
-    /* Futuristic gradient */
-    background: radial-gradient(circle at 20% 20%, #0059ff33, transparent 60%),
-                radial-gradient(circle at 80% 80%, #00e5ff33, transparent 60%),
-                #0A0A0C;
+    /* Background leggero tech */
+    background:
+        radial-gradient(circle at 30% 20%, rgba(0, 229, 255, 0.07), transparent 60%),
+        radial-gradient(circle at 70% 80%, rgba(0, 89, 255, 0.07), transparent 60%),
+        #0A0A0C;
+    padding: 0 1.5rem;
 }
 
-.hero-content .title {
-    font-size: 3.8rem;
+.hero-content {
+    max-width: 780px;
+}
+
+/* TITOLI meno glow, più raffinatezza */
+.hero-title {
+    font-size: 3.2rem;
     font-weight: 700;
-    letter-spacing: -1px;
-    color: white;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
 }
 
-.hero-content .subtitle {
-    font-size: 1.8rem;
+.hero-subtitle {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #8ab6ff;
+    margin-bottom: 18px;
+    opacity: 0.9;
+}
+
+/* TAGLINE minimal */
+.hero-tagline {
+    font-size: 1rem;
+    opacity: 0.75;
+    margin-bottom: 40px;
+    color: #d8d8d8;
+}
+
+/* BUTTONS minimal eleganti */
+.hero-buttons {
     margin-top: 10px;
-    color: #00e5ff;
 }
 
-.hero-text {
-    margin-top: 18px;
-    font-size: 1.1rem;
-    opacity: 0.8;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 150%;
-    height: 150%;
-    top: -30%;
-    left: -30%;
-    background: 
-        linear-gradient(60deg, rgba(0,229,255,0.06) 0%, transparent 60%),
-        linear-gradient(120deg, rgba(0,89,255,0.06) 0%, transparent 60%);
-    mask-image: radial-gradient(circle, black 20%, transparent 80%);
-    animation: gridMove 20s linear infinite;
-    pointer-events: none;
-}
-
-@keyframes gridMove {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
-}
-
-/* Buttons */
-.btn {
+.hero-btn-primary {
+    background: #0059ff;
+    color: white;
     padding: 12px 26px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
-    margin: 10px;
-    display: inline-block;
-    transition: 0.3s ease;
+    transition: 0.25s ease;
+    margin-right: 12px;
+    box-shadow: 0 0 10px transparent;
 }
 
-.btn.primary {
-    background: #0059ff;
-    color: white;
-    box-shadow: 0 0 12px #0059ff88;
-}
-
-.btn.primary:hover {
+.hero-btn-primary:hover {
     background: #1a6aff;
-    transform: translateY(-3px);
+    box-shadow: 0 0 14px #0059ff44;
+    transform: translateY(-2px);
 }
 
-.btn.secondary {
-    background: transparent;
-    border: 2px solid #00e5ff;
+.hero-btn-secondary {
+    padding: 12px 26px;
+    border-radius: 8px;
+    border: 1px solid #00e5ff88;
     color: #00e5ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.25s ease;
 }
 
-.btn.secondary:hover {
-    background: #00e5ff22;
-    transform: translateY(-3px);
+.hero-btn-secondary:hover {
+    background: rgba(0, 229, 255, 0.08);
+    transform: translateY(-2px);
+    border-color: #00e5ff;
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-tagline {
+        font-size: 0.85rem;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons a {
+        margin: 6px 0;
+        display: inline-block;
+    }
 }
 
 /* =========================================
@@ -459,7 +478,7 @@ body {
     }
 
     .hero-content .subtitle {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .hero-text {

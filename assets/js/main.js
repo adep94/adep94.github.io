@@ -20,7 +20,7 @@ const translations = {
         
         "timeline_title": "Timeline",
         "skills_title": "Competenze",
-        "contact_title": "Contattami",
+        "contact_title": "Contatti",
 
         "form_name": "Nome",
         "form_email": "Email",
