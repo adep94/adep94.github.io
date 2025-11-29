@@ -44,7 +44,7 @@ const translations = {
         
         "timeline_title": "Timeline",
         "skills_title": "Skills",
-        "contact_title": "Contact Me",
+        "contact_title": "Contacts",
 
         "form_name": "Name",
         "form_email": "Email",
