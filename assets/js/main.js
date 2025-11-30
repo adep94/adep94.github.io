@@ -19,13 +19,24 @@ const translations = {
         "about_text": "Sono un ingegnere di sistemi embedded con esperienza in FPGA, controllo, modellazione e sistemi real-time.",
         
         "timeline_title": "Timeline",
+        "timeline_content1": "Ingegnere di Sistemi Embedded - Fusion for Energy",
+        "timeline_content2": "Sviluppo firmware FPGA (HotRIO, APDCAM, OPD), comunicazione 1Gbps, logiche FSM, diagnostics.",
+        "timeline_content3": "Laurea Magistrale in Ingegneria dell'Automazione & Robotica",
+        "timeline_content4": "Specializzazione in controlli avanzati, sistemi real-time, robotica e simulazioni MATLAB/Simulink.",
+        "timeline_content5": "Laurea Triennale in Ingegneria dell'Automazione",
+        "timeline_content6": "Fondamenti di controllo, elettronica, sistemi embedded.",
+
+        "project1_detail": "Firmware FPGA per acquisizione SFP e ADC, decodifica pacchetti e sincronizzazione.",
+        "project2_detail": "Logica di sicurezza per il Disruption Mitigation System, voting 1oo2, FSM avanzata e diagnostica.",
+        "project3_detail": "MPC, RMPC, SMPC con Markov, ARIMA e simulazioni Monte Carlo.",
+        "project4_detail": "SLAM, Localizzazione di marker ArUco e controllo su piattaforma mobile.",
+
         "skills_title": "Competenze",
-        "contact_title": "Contatti",
+        "contact_title": "Contatti", 
 
         "form_name": "Nome",
         "form_email": "Email",
         "form_message": "Messaggio",
-        "form_send": "Invia"
     },
 
     "en": {
@@ -43,13 +54,24 @@ const translations = {
         "about_text": "I am an embedded systems engineer experienced in FPGA design, control systems, modelling and real-time architectures.",
         
         "timeline_title": "Timeline",
+        "timeline_content1": "Embedded Systems Engineer - Fusion for Energy",
+        "timeline_content2": "Firmware FPGA Develop (HotRIO, APDCAM, OPD), 1Gbps communication, FSM logic, diagnostics.",
+        "timeline_content3": "Master Automation Engineering & Robotics",
+        "timeline_content4": "Specialization in advanced control, real-time systems, robotics, and MATLAB/Simulink simulations.",
+        "timeline_content5": "Bachelor Automation Engineering",
+        "timeline_content6": "Foundations in control theory, electronics, and embedded systems.",
+
+        "project1_detail": "FPGA firmware for SFP and ADC acquisition, packet decoding, and synchronization.",
+        "project2_detail": "Safety logic for the Disruption Mitigation System, 1oo2 voting, advanced FSM, and diagnostics.",
+        "project3_detail": "MPC, RMPC, SMPC with Markov, ARIMA, and Monte Carlo simulations.",
+        "project4_detail": "SLAM, ArUco marker localization, and control on a mobile platform.",
+
         "skills_title": "Skills",
         "contact_title": "Contacts",
 
         "form_name": "Name",
         "form_email": "Email",
         "form_message": "Message",
-        "form_send": "Send"
     }
 };
 
