@@ -68,7 +68,7 @@ const translations = {
         "project4_detail": "SLAM, ArUco marker localization, and control on a mobile platform.",
 
         "skills_title": "Skills",
-        "contact_title": "Contact Me",
+        "contact_title": "Contacts",
         "projects_title": "My Projects",
 
         "form_name": "Name",
