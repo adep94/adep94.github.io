@@ -5,6 +5,10 @@
 const translations = {
 
     "it": {
+        "about_link": "Chi sono",
+        "projects_link": "Progetti",
+        "contact_link": "Contatti",
+
         "hero_title": "Andrea De Pisapia",
         "hero_subtitle": "Ingegnere Embedded & Control Systems",
         "hero_tagline": "FPGA Design · Sistemi Real-Time · Robotica · Controllo & Simulazione",
@@ -37,6 +41,10 @@ const translations = {
     },
 
     "en": {
+        "about_link": "About Me",
+        "projects_link": "Projects",
+        "contact_link": "Contacts",
+
         "hero_title": "Andrea De Pisapia",
         "hero_subtitle": "Embedded & Control Systems Engineer",
         "hero_tagline": "FPGA Design · Real-Time Systems · Robotics · Simulation & Control",
