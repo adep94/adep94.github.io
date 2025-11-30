@@ -11,7 +11,7 @@ const translations = {
 
         "hero_title": "Andrea De Pisapia",
         "hero_subtitle": "Ingegnere Embedded & Control Systems",
-        "hero_text": "FPGA Design · Real-Time Systems · Robotics · Simulation & Control",
+        "hero_tagline": "FPGA Design · Sistemi Real-Time · Robotica · Controllo & Simulazione",
         "btn_projects": "I miei progetti",
         "btn_cv": "Scarica CV",
 
@@ -29,13 +29,13 @@ const translations = {
     },
 
     "en": {
-        "about_link": "About",
+        "about_link": "About Me",
         "projects_link": "Projects",
-        "contact_link": "Contact",
+        "contact_link": "Contacts",
 
         "hero_title": "Andrea De Pisapia",
         "hero_subtitle": "Embedded & Control Systems Engineer",
-        "hero_text": "FPGA Design · Real-Time Systems · Robotics · Simulation & Control",
+        "hero_tagline": "FPGA Design · Real-Time Systems · Robotics · Simulation & Control",
         "btn_projects": "My Projects",
         "btn_cv": "Download CV",
 
@@ -44,7 +44,7 @@ const translations = {
         
         "timeline_title": "Timeline",
         "skills_title": "Skills",
-        "contact_title": "Contact Me",
+        "contact_title": "Contacts",
 
         "form_name": "Name",
         "form_email": "Email",
