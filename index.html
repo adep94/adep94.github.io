@@ -41,7 +41,7 @@
 
         <ul class="nav-links">
             <li><a href="#about" data-lang-key="about_link">Chi sono</a></li>
-            <li><a href="projects.html" data-lang-key="projects_link">Progetti</a></li>
+            <li><a href="#projects" data-lang-key="projects_link">Progetti</a></li>
             <li><a href="#contact" data-lang-key="contact_link">Contatti</a></li>
         </ul>
 
@@ -64,7 +64,7 @@
             </p>
 
             <div class="hero-buttons">
-                <a href="projects.html" class="btn hero-btn-primary" data-lang-key="btn_projects">
+                <a href="@projects" class="btn hero-btn-primary" data-lang-key="btn_projects">
                     I miei progetti
                 </a>
                 <a href="adepisapia_CV.pdf" class="btn hero-btn-secondary" data-lang-key="btn_cv">
@@ -87,40 +87,48 @@
         </p>
     </section>
 
-    <section id="timeline" class="section reveal">
-    <h2>Timeline</h2>
+    <section id="timeline" class="timeline-section">
+        <h2 class="section-title">Timeline professionale</h2>
+        <div class="neon-underline"></div>
 
-    <div class="timeline">
+        <div class="timeline">
 
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3 data-lang-key="timeline_content1">Embedded Systems Engineer - Fusion for Energy</h3>
-                <span class="timeline-date">2024 - Oggi</span>
-                <p data-lang-key="timeline_content2">Sviluppo firmware FPGA (HotRIO, APDCAM, OPD), comunicazione 1Gbps, logiche FSM, diagnostics.</p>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2025 - APDCAM / OPD FPGA</h3>
+                    <p>Sviluppo logiche OPD: FSM, votazioni 1oo2, diagnostica, integrazione HotRIO.</p>
+                </div>
             </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2024 - HotRIO Ipanema</h3>
+                    <p>Firmware FPGA per acquisizione ADC 1 Gbps, PCS ECP5, pacchetti custom, sistemi ITER.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2023 - Embedded & Robotics</h3>
+                    <p>Controllo robot mobile ROS, localizzazione tramite marker ArUco e algoritmi di tracking.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2022 - Smart Control Systems</h3>
+                    <p>MPC, RMPC, SMPC, ARIMA modeling, simulazioni Monte Carlo su sistemi dinamici.</p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3 data-lang-key="timeline_content3">Master Automation Engineering & Robotics</h3>
-                <span class="timeline-date">2021 - 2024</span>
-                <p data-lang-key="timeline_content4">Specializzazione in controlli avanzati, sistemi real-time, robotica e simulazioni MATLAB/Simulink.</p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3 data-lang-key="timeline_content5">Bachelor Automation Engineering</h3>
-                <span class="timeline-date">2017 - 2021</span>
-                <p data-lang-key="timeline_content6">Fondamenti di controllo, elettronica, sistemi embedded.</p>
-            </div>
-        </div>
-
-    </div>
     </section>
+
 
     <section id="skills" class="section reveal">
     <h2 data-lang-key="skills_title">Competenze</h2>
