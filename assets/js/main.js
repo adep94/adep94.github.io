@@ -38,6 +38,10 @@ const translations = {
         "form_name": "Nome",
         "form_email": "Email",
         "form_message": "Messaggio",
+
+        "contact_link": "Contatti",
+        "contact_title": "Contattami",
+        "form_send": "Invia",
     },
 
     "en": {
@@ -74,6 +78,10 @@ const translations = {
         "form_name": "Name",
         "form_email": "Email",
         "form_message": "Message",
+
+        "contact_link": "Contact",
+        "contact_title": "Contact Me",
+        "form_send": "Send"
     }
 };
 
