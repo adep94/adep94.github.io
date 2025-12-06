@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-    <meta charset="UTF-8" />
-    <title>Contatti | Andrea De Pisapia</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contattami - Andrea De Pisapia</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
+    <!-- Particles background (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 
 <body>
 
-<nav class="navbar">
-    <div class="nav-container">
-        <a href="index.html" class="nav-logo">A.D.P.</a>
-    </div>
-</nav>
+    <div id="particles-js"></div>
 
-<section class="section reveal">
-    <h2>Contatti</h2>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">adp</a>
 
-    <form class="contact-form" action="mailto:andreadepisapia3@gmail.com" method="POST" enctype="text/plain">
-        
-        <label>Nome</label>
-        <input type="text" name="Nome" required>
+            <ul class="nav-links">
+                <li><a href="index.html#about" data-lang-key="about_link">Chi sono</a></li>
+                <li><a href="index.html#projects" data-lang-key="projects_link">Progetti</a></li>
+                <li><a href="contact.html" data-lang-key="contact_link" class="active">Contatti</a></li>
+            </ul>
 
-        <label>Email</label>
-        <input type="email" name="Email" required>
+            <div class="lang-switch">
+                <span onclick="setLanguage('it')" id="lang-it">IT</span> |
+                <span onclick="setLanguage('en')" id="lang-en">EN</span>
+            </div>
+        </div>
+    </nav>
 
-        <label>Messaggio</label>
-        <textarea name="Messaggio" required></textarea>
+    <main class="contact-container">
 
-        <button type="submit" class="btn primary">Invia</button>
-    </form>
-</section>
+        <h1 class="contact-title" data-lang-key="contact_title">Contatti</h1>
+        <div class="neon-underline"></div>
+
+        <p class="contact-subtitle">
+            Per collaborazioni, progetti o informazioni, scrivimi qui.
+        </p>
+
+        <form action="mailto:andrea@mail.com" method="POST" enctype="text/plain" class="contact-form">
+
+            <label data-lang-key="form_name">Nome</label>
+            <input type="text" name="name" required>
+
+            <label data-lang-key="form_email">Email</label>
+            <input type="email" name="email" required>
+
+            <label data-lang-key="form_message">Messaggio</label>
+            <textarea name="message" rows="6" required></textarea>
+
+            <button type="submit" class="btn hero-btn-primary" data-lang-key="form_send">Invia</button>
+        </form>
+
+    </main>
 
 </body>
+
 </html>
