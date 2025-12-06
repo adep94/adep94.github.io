@@ -40,7 +40,7 @@ const translations = {
         "form_message": "Messaggio",
 
         "contact_link": "Contatti",
-        "contact_title": "Contattami",
+        "contact_title": "Contatti",
         "form_send": "Invia",
     },
 
