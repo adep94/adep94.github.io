@@ -103,24 +103,6 @@ function setLanguage(lang) {
     document.getElementById("lang-" + lang).classList.add("lang-active");
 }
 
-/* ===============================
-   TIMELINE SCROLL REVEAL
-================================ */
-function revealTimeline() {
-    const items = document.querySelectorAll(".timeline-item");
-    const trigger = window.innerHeight * 0.85;
-
-    items.forEach(item => {
-        const top = item.getBoundingClientRect().top;
-        if (top < trigger) {
-            item.classList.add("reveal");
-        }
-    });
-}
-
-window.addEventListener("scroll", revealTimeline);
-window.addEventListener("load", revealTimeline);
-
 // Carica lingua salvata (default = IT)
 document.addEventListener("DOMContentLoaded", () => {
     const lang = localStorage.getItem("lang") || "it";
