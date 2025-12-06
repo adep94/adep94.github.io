@@ -471,9 +471,9 @@ body {
     box-shadow: 0 0 12px #00e5ff88;
 }
 
-.timeline-item:nth-child(even) .timeline-dot {
+/* .timeline-item:nth-child(even) .timeline-dot {
     left: calc(-7px - 2px - 50px);
-}
+} */
 
 /* CONTENT BOX */
 .timeline-content {
