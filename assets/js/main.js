@@ -79,8 +79,8 @@ const translations = {
         "form_email": "Email",
         "form_message": "Message",
 
-        "contact_link": "Contact",
-        "contact_title": "Contact Me",
+        "contact_link": "Contacts",
+        "contact_title": "Contacts",
         "form_send": "Send"
     }
 };
